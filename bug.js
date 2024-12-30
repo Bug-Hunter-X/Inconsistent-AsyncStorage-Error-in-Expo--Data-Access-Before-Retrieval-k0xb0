@@ -1,0 +1,1 @@
+This error occurs when using AsyncStorage in Expo and you try to access the data before it has been fully retrieved. This often happens when you're using `AsyncStorage.getItem` within a function that's called immediately after the component mounts. By the time the data is retrieved, the component might have already rendered, causing the error to appear inconsistently.
